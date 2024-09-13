@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer ></script>
+    <title>Rock-Paper-Scissors Game</title>
 </head>
 <body>
-    <h1> Rock - Paper - Scissors </h1>
+    <h1>Rock-Paper-Scissors Game</h1>
 
+    <!-- Buttons for player choices -->
     <div id="choices">
-        <button onclick="playGame('rock')">👊</button>
-        <button>✋</button>
-        <button>✌️</button>
+        <button id="rock"> <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" alt="rock" width="250"></button>
+        <button id="paper"> <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296855_1280.png" alt="paper" width="250"></button>
+        <button id="scissors"> <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" alt="scissor" width="250"></button>
     </div>
+
+   
     
-    <div id="playerDisplay"> PLAYER: </div>
-    <div id="computerDisplay"> COMPUTER: </div>
-    <div id="resultDisplay"> IT'S A TIE!</div>
+    <!-- Div to display the results and score -->
+      
+    <div id="scoreDisplay">Player: 0 -    Computer: 0</div>
+    <div id="resultDisplay"></div>  
+   
 </body>
 </html>
